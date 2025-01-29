@@ -1,0 +1,110 @@
+
+  .ring {
+    position: relative;
+    --pointerleft: 81%;
+    --pointertop: 16%;
+    --pointerdeg: -135deg;
+    width: 50vmin;
+    padding: 0.2vw;
+    height: 50vmin;
+
+    background-image: radial-gradient(gold 0, gold 50%, transparent 50%, transparent 100%), radial-gradient(green 0, green 50%, transparent 50%, transparent 100%), radial-gradient(white 0, white 60%, transparent 60%), conic-gradient(orange 0, green 130deg, white 130deg, white 230deg, gold 230deg, orange 360deg);
+    background-size: 11% 11%, 11% 11%, 100% 100%, 100% 100%;
+    background-repeat: no-repeat;
+    background-position: 9.2% 82.3%, 90.8% 82.3%, center center, center center;
+    border-radius: 50%;
+    border-style: none;
+  }
+
+  .buffer{
+    width: 50vmin;
+    height: 50vmin;
+
+
+    background-image: radial-gradient(gold 0, gold 50%, transparent 50%, transparent 100%), radial-gradient(green 0, green 50%, transparent 50%, transparent 100%), radial-gradient(white 0, white 60%, transparent 60%), conic-gradient(orange 0, green 130deg, white 130deg, white 230deg, gold 230deg, orange 360deg);
+    background-size: 11% 11%, 11% 11%, 100% 100%, 100% 100%;
+    background-repeat: no-repeat;
+    background-position: 9.2% 82.3%, 90.8% 82.3%, center center, center center;
+    border-radius: 50%;
+    border-style: none;
+  }
+
+  .buffer2{
+    background: white; 
+    padding: 1.1vw 1.7vw 1.5vw 1.2vw
+    /* padding: 20px 30px 20px 25px */
+  }
+  
+  
+  .ring::after {
+    position: absolute;
+    content: '';
+    width: 5%;
+    height: 5%;
+    left: var(--pointerleft);
+    top: var(--pointertop);
+    transform: rotate(var(--pointerdeg));
+    border-style: solid;
+    border-width: 0.5vmin;
+    border-radius: 2vmin;
+    background-color: white;
+  }
+  
+  .speed {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    color: black;
+  }
+  body{
+    background: black
+  }
+  #sub-number1{
+    color: gold
+  }
+  
+  #sub-number2{
+    color: green
+  }
+  .speed .number {
+    font-size: 12vw;
+  }
+  
+  .speed .units {
+    font-size: 3vw;
+  }
+
+  .center{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .gauge-bottom {
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-left: 20px solid transparent;
+    border-right: 20px solid transparent;
+    border-top: 50px solid white;
+    bottom: -4vw;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .sub-numbers{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
+    color: gray;
+    font-size: 4vw;
+  }
+
+  
