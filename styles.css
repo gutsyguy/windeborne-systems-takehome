@@ -5,7 +5,7 @@
     --pointertop: 16%;
     --pointerdeg: -135deg;
     width: 50vmin;
-    padding: 0.2vw;
+    padding: 0.4vh;
     height: 50vmin;
 
     background-image: radial-gradient(gold 0, gold 50%, transparent 50%, transparent 100%), radial-gradient(green 0, green 50%, transparent 50%, transparent 100%), radial-gradient(white 0, white 60%, transparent 60%), conic-gradient(orange 0, green 130deg, white 130deg, white 230deg, gold 230deg, orange 360deg);
@@ -31,7 +31,7 @@
 
   .buffer2{
     background: white; 
-    padding: 1.1vw 1.7vw 1.5vw 1.2vw
+    padding: 2.2vh 3.4vh 3.0vh 2.4vh
     /* padding: 20px 30px 20px 25px */
   }
   
@@ -70,11 +70,11 @@
     color: green
   }
   .speed .number {
-    font-size: 12vw;
+    font-size: 24vh;
   }
   
   .speed .units {
-    font-size: 3vw;
+    font-size: 6vh;
   }
 
   .center{
@@ -90,7 +90,7 @@
     border-left: 20px solid transparent;
     border-right: 20px solid transparent;
     border-top: 50px solid white;
-    bottom: -4vw;
+    bottom: -8vh;
     left: 50%;
     transform: translateX(-50%);
   }
@@ -104,7 +104,7 @@
     justify-content: space-evenly;
     width: 80%;
     color: gray;
-    font-size: 4vw;
+    font-size: 8vh;
   }
 
   
